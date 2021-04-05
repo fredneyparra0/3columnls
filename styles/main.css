@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --veryCyan: hsl(179, 100%, 13%);
+    --primary:  'Big Shoulders Display';
+    --secundary: 'Lexend Deca';
+}
+.containerCards {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.card {
+    height: 400px;
+    width: 15%;
+    padding: 30px 40px;
+}
+
+.colorOrange {
+    background-color: var(--orange);
+}
+.colorCyan {
+    background-color: var(--cyan);
+}
+.colorDarkCyan {
+    background-color: var(--veryCyan);
+}
+
+.card__image {
+    margin: 0 0 20px 0;
+}
+.card__title, .card__paragraph {
+    color: white;
+}
+.card__title {
+    font-family: 'Big Shoulders Display';
+    font-size: 40px;
+}
+.card__paragraph {
+    font-family: 'Lexend Deca';
+    line-height: 25px;
+}
+.border-right {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.border-left {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card__paragraph {
+    margin: 20px 0 60px 0;
+    font-size: 14px;
+}
+
+.card__button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 22px;
+    font-size: 14px;
+    font-family: 'Lexend Deca';
+    cursor: pointer;
+}
+.color--textOrange {
+    color: var(--orange);
+}
+.color--textCyan {
+    color: var(--cyan);
+}
+.color--textDarkCyan {
+    color: var(--veryCyan);
+}
+
+.textLearnMore {
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+.cyan {
+    background-color: var(--cyan);
+}
+.veryCyan {
+    background-color: var(--veryCyan);
+}
+.containerText {
+    position: relative;
+}
+.containerText__title {
+    font-family: var(--primary);
+}
+
+.x {
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    background-color: rgba(0, 0, 0, 0.452);
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1106px) {
+    .card__paragraph {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 943px) {
+    .card {
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    .container {
+        display: block;
+    }
+    .card {
+        margin: auto;
+        width: 50%;
+    }
+    .border-right {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .border-left {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
